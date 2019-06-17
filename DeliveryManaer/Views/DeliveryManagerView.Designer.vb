@@ -26,6 +26,7 @@
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DeliveryManagerView))
+        Dim SplashScreenManager As DevExpress.XtraSplashScreen.SplashScreenManager = New DevExpress.XtraSplashScreen.SplashScreenManager(Me, GetType(Global.DeliveryManaer.DeliveryManagerSplashView), True, True)
         Me.ribbonControlGodown = New DevExpress.XtraBars.Ribbon.RibbonControl()
         Me.BarButtonDeliveryLog = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItemNewDeliveryRequest = New DevExpress.XtraBars.BarButtonItem()
@@ -223,6 +224,10 @@
         Me.RibbonPageGroupUserAdministration.ItemLinks.Add(Me.BarButtonItemLogout)
         Me.RibbonPageGroupUserAdministration.Name = "RibbonPageGroupUserAdministration"
         Me.RibbonPageGroupUserAdministration.Text = "User Administration"
+        '
+        'SplashScreenManager
+        '
+        SplashScreenManager.ClosingDelay = 500
         '
         'DeliveryManagerView
         '

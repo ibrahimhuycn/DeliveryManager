@@ -23,7 +23,6 @@ Partial Class DeliveryManagerSplashView
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DeliveryManagerSplashView))
-        Dim DeliverySplashScreenManager As DevExpress.XtraSplashScreen.SplashScreenManager = New DevExpress.XtraSplashScreen.SplashScreenManager(Me, GetType(Global.DeliveryManaer.DeliveryManagerSplashView), True, True)
         Me.peImage = New DevExpress.XtraEditors.PictureEdit()
         Me.peLogo = New DevExpress.XtraEditors.PictureEdit()
         Me.labelStatus = New DevExpress.XtraEditors.LabelControl()
@@ -86,10 +85,6 @@ Partial Class DeliveryManagerSplashView
         Me.progressBarControl.Name = "progressBarControl"
         Me.progressBarControl.Size = New System.Drawing.Size(404, 12)
         Me.progressBarControl.TabIndex = 10
-        '
-        'DeliverySplashScreenManager
-        '
-        DeliverySplashScreenManager.ClosingDelay = 500
         '
         'DeliveryManagerSplashView
         '
