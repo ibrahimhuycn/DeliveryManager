@@ -39,20 +39,20 @@ Partial Class AddEditSharedView
         Me.GridControlItemsDisplay.Location = New System.Drawing.Point(0, 41)
         Me.GridControlItemsDisplay.MainView = Me.GridViewItemsDisplay
         Me.GridControlItemsDisplay.Name = "GridControlItemsDisplay"
-        Me.GridControlItemsDisplay.Size = New System.Drawing.Size(499, 228)
+        Me.GridControlItemsDisplay.Size = New System.Drawing.Size(647, 228)
         Me.GridControlItemsDisplay.TabIndex = 2
         Me.GridControlItemsDisplay.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridViewItemsDisplay})
         '
         'GridViewItemsDisplay
         '
         Me.GridViewItemsDisplay.GridControl = Me.GridControlItemsDisplay
-        Me.GridViewItemsDisplay.Name = "GridView1"
+        Me.GridViewItemsDisplay.Name = "GridViewItemsDisplay"
         '
         'AddEditSharedView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(498, 268)
+        Me.ClientSize = New System.Drawing.Size(647, 269)
         Me.Controls.Add(Me.GridControlItemsDisplay)
         Me.Controls.Add(Me.SimpleButtonSave)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
