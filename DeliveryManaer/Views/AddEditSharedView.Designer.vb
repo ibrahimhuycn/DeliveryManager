@@ -19,62 +19,51 @@ Partial Class AddEditSharedView
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
-        Me.SimpleButton2 = New DevExpress.XtraEditors.SimpleButton()
-        Me.GridControl1 = New DevExpress.XtraGrid.GridControl()
-        Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
-        CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SimpleButtonSave = New DevExpress.XtraEditors.SimpleButton()
+        Me.GridControlItemsDisplay = New DevExpress.XtraGrid.GridControl()
+        Me.GridViewItemsDisplay = New DevExpress.XtraGrid.Views.Grid.GridView()
+        CType(Me.GridControlItemsDisplay, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridViewItemsDisplay, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'SimpleButton1
+        'SimpleButtonSave
         '
-        Me.SimpleButton1.Location = New System.Drawing.Point(93, 12)
-        Me.SimpleButton1.Name = "SimpleButton1"
-        Me.SimpleButton1.Size = New System.Drawing.Size(75, 23)
-        Me.SimpleButton1.TabIndex = 0
-        Me.SimpleButton1.Text = "SimpleButton1"
+        Me.SimpleButtonSave.Location = New System.Drawing.Point(12, 12)
+        Me.SimpleButtonSave.Name = "SimpleButtonSave"
+        Me.SimpleButtonSave.Size = New System.Drawing.Size(75, 23)
+        Me.SimpleButtonSave.TabIndex = 1
+        Me.SimpleButtonSave.Text = "&Save"
         '
-        'SimpleButton2
+        'GridControlItemsDisplay
         '
-        Me.SimpleButton2.Location = New System.Drawing.Point(12, 12)
-        Me.SimpleButton2.Name = "SimpleButton2"
-        Me.SimpleButton2.Size = New System.Drawing.Size(75, 23)
-        Me.SimpleButton2.TabIndex = 1
-        Me.SimpleButton2.Text = "SimpleButton2"
+        Me.GridControlItemsDisplay.Location = New System.Drawing.Point(0, 41)
+        Me.GridControlItemsDisplay.MainView = Me.GridViewItemsDisplay
+        Me.GridControlItemsDisplay.Name = "GridControlItemsDisplay"
+        Me.GridControlItemsDisplay.Size = New System.Drawing.Size(499, 228)
+        Me.GridControlItemsDisplay.TabIndex = 2
+        Me.GridControlItemsDisplay.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridViewItemsDisplay})
         '
-        'GridControl1
+        'GridViewItemsDisplay
         '
-        Me.GridControl1.Location = New System.Drawing.Point(0, 41)
-        Me.GridControl1.MainView = Me.GridView1
-        Me.GridControl1.Name = "GridControl1"
-        Me.GridControl1.Size = New System.Drawing.Size(499, 228)
-        Me.GridControl1.TabIndex = 2
-        Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
-        '
-        'GridView1
-        '
-        Me.GridView1.GridControl = Me.GridControl1
-        Me.GridView1.Name = "GridView1"
+        Me.GridViewItemsDisplay.GridControl = Me.GridControlItemsDisplay
+        Me.GridViewItemsDisplay.Name = "GridView1"
         '
         'AddEditSharedView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(498, 268)
-        Me.Controls.Add(Me.GridControl1)
-        Me.Controls.Add(Me.SimpleButton2)
-        Me.Controls.Add(Me.SimpleButton1)
+        Me.Controls.Add(Me.GridControlItemsDisplay)
+        Me.Controls.Add(Me.SimpleButtonSave)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "AddEditSharedView"
         Me.Text = "AddEditShared"
-        CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GridControlItemsDisplay, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GridViewItemsDisplay, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents SimpleButton1 As DevExpress.XtraEditors.SimpleButton
-    Friend WithEvents SimpleButton2 As DevExpress.XtraEditors.SimpleButton
-    Friend WithEvents GridControl1 As DevExpress.XtraGrid.GridControl
-    Friend WithEvents GridView1 As DevExpress.XtraGrid.Views.Grid.GridView
+    Friend WithEvents SimpleButtonSave As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents GridControlItemsDisplay As DevExpress.XtraGrid.GridControl
+    Friend WithEvents GridViewItemsDisplay As DevExpress.XtraGrid.Views.Grid.GridView
 End Class

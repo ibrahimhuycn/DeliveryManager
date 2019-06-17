@@ -1,6 +1,5 @@
-﻿Public Class AddEditSharedView
+﻿Public Class AuthenticationView
     Public Sub New()
-
 
         ' This call is required by the designer.
         InitializeComponent()

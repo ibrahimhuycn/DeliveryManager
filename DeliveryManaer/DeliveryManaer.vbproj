@@ -76,10 +76,22 @@
     <Import Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Views\AuthenticationView.Designer.vb">
+      <DependentUpon>AuthenticationView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AuthenticationView.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Views\AddEditSharedView.Designer.vb">
       <DependentUpon>AddEditSharedView.vb</DependentUpon>
     </Compile>
     <Compile Include="Views\AddEditSharedView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DeliveryManagerSplashView.Designer.vb">
+      <DependentUpon>DeliveryManagerSplashView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeliveryManagerSplashView.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\DeliveryManagerView.vb">
@@ -93,8 +105,14 @@
       <DependentUpon>Application.myapp</DependentUpon>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
+    <EmbeddedResource Include="Views\AuthenticationView.resx">
+      <DependentUpon>AuthenticationView.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\AddEditSharedView.resx">
       <DependentUpon>AddEditSharedView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DeliveryManagerSplashView.resx">
+      <DependentUpon>DeliveryManagerSplashView.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\DeliveryManagerView.resx">
       <DependentUpon>DeliveryManagerView.vb</DependentUpon>
@@ -126,6 +144,10 @@
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

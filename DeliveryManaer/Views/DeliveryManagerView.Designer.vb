@@ -62,7 +62,8 @@
         Me.ribbonControlGodown.MaxItemId = 11
         Me.ribbonControlGodown.Name = "ribbonControlGodown"
         Me.ribbonControlGodown.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.ribbonPageMain})
-        Me.ribbonControlGodown.Size = New System.Drawing.Size(1219, 143)
+        Me.ribbonControlGodown.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2007
+        Me.ribbonControlGodown.Size = New System.Drawing.Size(932, 143)
         '
         'BarButtonDeliveryLog
         '
@@ -218,8 +219,8 @@
         '
         'RibbonPageGroupUserAdministration
         '
-        Me.RibbonPageGroupUserAdministration.ItemLinks.Add(Me.BarButtonItemLogout)
         Me.RibbonPageGroupUserAdministration.ItemLinks.Add(Me.BarButtonItemChangePassword)
+        Me.RibbonPageGroupUserAdministration.ItemLinks.Add(Me.BarButtonItemLogout)
         Me.RibbonPageGroupUserAdministration.Name = "RibbonPageGroupUserAdministration"
         Me.RibbonPageGroupUserAdministration.Text = "User Administration"
         '
@@ -227,7 +228,7 @@
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1219, 583)
+        Me.ClientSize = New System.Drawing.Size(932, 361)
         Me.Controls.Add(Me.ribbonControlGodown)
         Me.Name = "DeliveryManagerView"
         Me.Ribbon = Me.ribbonControlGodown
