@@ -28,31 +28,32 @@ Partial Class AddEditSharedView
         '
         'SimpleButtonSave
         '
-        Me.SimpleButtonSave.Location = New System.Drawing.Point(12, 12)
+        Me.SimpleButtonSave.Location = New System.Drawing.Point(14, 12)
         Me.SimpleButtonSave.Name = "SimpleButtonSave"
-        Me.SimpleButtonSave.Size = New System.Drawing.Size(75, 23)
+        Me.SimpleButtonSave.Size = New System.Drawing.Size(87, 27)
         Me.SimpleButtonSave.TabIndex = 1
         Me.SimpleButtonSave.Text = "&Save"
         '
         'GridControlItemsDisplay
         '
-        Me.GridControlItemsDisplay.Location = New System.Drawing.Point(0, 41)
+        Me.GridControlItemsDisplay.Location = New System.Drawing.Point(0, 47)
         Me.GridControlItemsDisplay.MainView = Me.GridViewItemsDisplay
         Me.GridControlItemsDisplay.Name = "GridControlItemsDisplay"
-        Me.GridControlItemsDisplay.Size = New System.Drawing.Size(647, 228)
+        Me.GridControlItemsDisplay.Size = New System.Drawing.Size(755, 263)
         Me.GridControlItemsDisplay.TabIndex = 2
         Me.GridControlItemsDisplay.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridViewItemsDisplay})
         '
         'GridViewItemsDisplay
         '
+        Me.GridViewItemsDisplay.DetailHeight = 404
         Me.GridViewItemsDisplay.GridControl = Me.GridControlItemsDisplay
         Me.GridViewItemsDisplay.Name = "GridViewItemsDisplay"
         '
         'AddEditSharedView
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(647, 269)
+        Me.ClientSize = New System.Drawing.Size(755, 309)
         Me.Controls.Add(Me.GridControlItemsDisplay)
         Me.Controls.Add(Me.SimpleButtonSave)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow

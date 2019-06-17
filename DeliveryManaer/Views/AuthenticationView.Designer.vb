@@ -80,12 +80,12 @@ Partial Class AuthenticationView
         Me.CheckEditRememberUser.Size = New System.Drawing.Size(129, 19)
         Me.CheckEditRememberUser.TabIndex = 5
         '
-        'Authentication
+        'AuthenticationView
         '
         Me.Appearance.Options.UseFont = True
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(249, 136)
+        Me.ClientSize = New System.Drawing.Size(249, 135)
         Me.Controls.Add(Me.CheckEditRememberUser)
         Me.Controls.Add(Me.LabelControlWelcomeText)
         Me.Controls.Add(Me.TextEditPassword)
@@ -93,7 +93,7 @@ Partial Class AuthenticationView
         Me.Controls.Add(Me.SimpleButtonLogin)
         Me.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
-        Me.Name = "Authentication"
+        Me.Name = "AuthenticationView"
         Me.Text = "Authentication"
         CType(Me.TextEditUsername.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TextEditPassword.Properties, System.ComponentModel.ISupportInitialize).EndInit()

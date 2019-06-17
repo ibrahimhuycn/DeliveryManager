@@ -25,8 +25,8 @@
     ''' </summary>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DeliveryManagerView))
         Dim SplashScreenManager As DevExpress.XtraSplashScreen.SplashScreenManager = New DevExpress.XtraSplashScreen.SplashScreenManager(Me, GetType(Global.DeliveryManaer.DeliveryManagerSplashView), True, True)
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DeliveryManagerView))
         Me.ribbonControlGodown = New DevExpress.XtraBars.Ribbon.RibbonControl()
         Me.BarButtonDeliveryLog = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItemNewDeliveryRequest = New DevExpress.XtraBars.BarButtonItem()
@@ -55,16 +55,22 @@
         CType(Me.Customer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
+        'SplashScreenManager
+        '
+        SplashScreenManager.ClosingDelay = 500
+        '
         'ribbonControlGodown
         '
+        Me.ribbonControlGodown.ApplicationButtonImageOptions.SvgImage = CType(resources.GetObject("ribbonControlGodown.ApplicationButtonImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.ribbonControlGodown.ApplicationButtonImageOptions.SvgImageSize = New System.Drawing.Size(25, 25)
         Me.ribbonControlGodown.ExpandCollapseItem.Id = 0
         Me.ribbonControlGodown.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.ribbonControlGodown.ExpandCollapseItem, Me.ribbonControlGodown.SearchEditItem, Me.BarButtonDeliveryLog, Me.BarButtonItemNewDeliveryRequest, Me.BarButtonItemDeliveryStatus, Me.BarButtonItemGodown, Me.BarButtonItemDeliveryCompleted, Me.BarButtonItemDeliveryPending, Me.BarButtonItemDeliveryPartial, Me.BarButtonItemGodown1, Me.BarButtonItemGodown2, Me.BarButtonItemCustomer, Me.BarButtonItemIGMH, Me.BarButtonItemTTH, Me.BarButtonItemLogout, Me.BarButtonItemChangePassword})
         Me.ribbonControlGodown.Location = New System.Drawing.Point(0, 0)
-        Me.ribbonControlGodown.MaxItemId = 11
+        Me.ribbonControlGodown.MaxItemId = 1
         Me.ribbonControlGodown.Name = "ribbonControlGodown"
         Me.ribbonControlGodown.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.ribbonPageMain})
         Me.ribbonControlGodown.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2007
-        Me.ribbonControlGodown.Size = New System.Drawing.Size(932, 143)
+        Me.ribbonControlGodown.Size = New System.Drawing.Size(1087, 151)
         '
         'BarButtonDeliveryLog
         '
@@ -225,16 +231,13 @@
         Me.RibbonPageGroupUserAdministration.Name = "RibbonPageGroupUserAdministration"
         Me.RibbonPageGroupUserAdministration.Text = "User Administration"
         '
-        'SplashScreenManager
-        '
-        SplashScreenManager.ClosingDelay = 500
-        '
         'DeliveryManagerView
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(932, 361)
+        Me.ClientSize = New System.Drawing.Size(1087, 502)
         Me.Controls.Add(Me.ribbonControlGodown)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "DeliveryManagerView"
         Me.Ribbon = Me.ribbonControlGodown
         Me.Text = "Delivery Manager"
