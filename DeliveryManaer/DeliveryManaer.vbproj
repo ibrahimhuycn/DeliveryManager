@@ -76,6 +76,8 @@
     <Import Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\CustomerModel.vb" />
+    <Compile Include="ViewModels\CustomerViewModel.vb" />
     <Compile Include="Views\AuthenticationView.Designer.vb">
       <DependentUpon>AuthenticationView.vb</DependentUpon>
     </Compile>
@@ -86,6 +88,18 @@
       <DependentUpon>AddEditSharedView.vb</DependentUpon>
     </Compile>
     <Compile Include="Views\AddEditSharedView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ChangePasswordView.Designer.vb">
+      <DependentUpon>ChangePasswordView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ChangePasswordView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DeliveryLogDetails.Designer.vb">
+      <DependentUpon>DeliveryLogDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeliveryLogDetails.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\DeliveryLogsViews.Designer.vb">
@@ -116,6 +130,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\AddEditSharedView.resx">
       <DependentUpon>AddEditSharedView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ChangePasswordView.resx">
+      <DependentUpon>ChangePasswordView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DeliveryLogDetails.resx">
+      <DependentUpon>DeliveryLogDetails.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\DeliveryLogsViews.resx">
       <DependentUpon>DeliveryLogsViews.vb</DependentUpon>
@@ -154,10 +174,7 @@
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-    <Folder Include="ViewModels\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -12,4 +12,5 @@
     Public Enum SplashScreenCommand
         SomeCommandId
     End Enum
+
 End Class

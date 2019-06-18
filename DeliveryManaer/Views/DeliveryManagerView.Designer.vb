@@ -233,14 +233,24 @@
         '
         'DeliveryManagerView
         '
+        Me.AllowFormGlass = DevExpress.Utils.DefaultBoolean.[False]
+        Me.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(88, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(88, Byte), Integer))
+        Me.Appearance.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(88, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(88, Byte), Integer))
+        Me.Appearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(88, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(88, Byte), Integer))
+        Me.Appearance.ForeColor = System.Drawing.Color.FromArgb(CType(CType(88, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(88, Byte), Integer))
+        Me.Appearance.Options.UseBackColor = True
+        Me.Appearance.Options.UseBorderColor = True
+        Me.Appearance.Options.UseForeColor = True
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1087, 502)
         Me.Controls.Add(Me.ribbonControlGodown)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.IsMdiContainer = True
         Me.Name = "DeliveryManagerView"
         Me.Ribbon = Me.ribbonControlGodown
         Me.Text = "Delivery Manager"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.ribbonControlGodown, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PopupMenuDeliveryStatus, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PopupMenuGodown, System.ComponentModel.ISupportInitialize).EndInit()
