@@ -78,9 +78,11 @@
   <ItemGroup>
     <Compile Include="Models\CustomerModel.vb" />
     <Compile Include="Models\DeliveryLogsModel.vb" />
-    <Compile Include="ViewModels\CustomerViewModel.vb" />
+    <Compile Include="Models\AttachmentsModel.vb" />
+    <Compile Include="Models\CustomerViewModel.vb" />
     <Compile Include="ViewModels\DeliveryLogDetailsViewModel.vb" />
     <Compile Include="ViewModels\DeliveryLogsViewModel.vb" />
+    <Compile Include="ViewModels\EventsTraceModel.vb" />
     <Compile Include="Views\AuthenticationView.Designer.vb">
       <DependentUpon>AuthenticationView.vb</DependentUpon>
     </Compile>
