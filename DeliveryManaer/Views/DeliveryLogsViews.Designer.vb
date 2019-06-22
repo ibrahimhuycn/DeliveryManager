@@ -20,9 +20,8 @@ Partial Class DeliveryLogsViews
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.GridControl1 = New DevExpress.XtraGrid.GridControl()
-        Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
-        Me.BehaviorManager1 = New DevExpress.Utils.Behaviors.BehaviorManager(Me.components)
+        Me.GridControlDeliveryLogs = New DevExpress.XtraGrid.GridControl()
+        Me.GridViewDeliveryLogs = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.GridColumnNo = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumnCustomer = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumnCustomerPoNumber = New DevExpress.XtraGrid.Columns.GridColumn()
@@ -32,26 +31,27 @@ Partial Class DeliveryLogsViews
         Me.GridColumnReceivedBy = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumnReceivedDate = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumnComment = New DevExpress.XtraGrid.Columns.GridColumn()
-        CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BehaviorManager1 = New DevExpress.Utils.Behaviors.BehaviorManager(Me.components)
+        CType(Me.GridControlDeliveryLogs, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridViewDeliveryLogs, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BehaviorManager1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'GridControl1
+        'GridControlDeliveryLogs
         '
-        Me.GridControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GridControl1.Location = New System.Drawing.Point(0, 0)
-        Me.GridControl1.MainView = Me.GridView1
-        Me.GridControl1.Name = "GridControl1"
-        Me.GridControl1.Size = New System.Drawing.Size(1010, 469)
-        Me.GridControl1.TabIndex = 0
-        Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
+        Me.GridControlDeliveryLogs.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GridControlDeliveryLogs.Location = New System.Drawing.Point(0, 0)
+        Me.GridControlDeliveryLogs.MainView = Me.GridViewDeliveryLogs
+        Me.GridControlDeliveryLogs.Name = "GridControlDeliveryLogs"
+        Me.GridControlDeliveryLogs.Size = New System.Drawing.Size(1010, 469)
+        Me.GridControlDeliveryLogs.TabIndex = 0
+        Me.GridControlDeliveryLogs.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridViewDeliveryLogs})
         '
-        'GridView1
+        'GridViewDeliveryLogs
         '
-        Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumnNo, Me.GridColumnCustomer, Me.GridColumnCustomerPoNumber, Me.GridColumnGodown, Me.GridColumnDeliveredBy, Me.GridColumnDeliveryDate, Me.GridColumnReceivedBy, Me.GridColumnReceivedDate, Me.GridColumnComment})
-        Me.GridView1.GridControl = Me.GridControl1
-        Me.GridView1.Name = "GridView1"
+        Me.GridViewDeliveryLogs.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumnNo, Me.GridColumnCustomer, Me.GridColumnCustomerPoNumber, Me.GridColumnGodown, Me.GridColumnDeliveredBy, Me.GridColumnDeliveryDate, Me.GridColumnReceivedBy, Me.GridColumnReceivedDate, Me.GridColumnComment})
+        Me.GridViewDeliveryLogs.GridControl = Me.GridControlDeliveryLogs
+        Me.GridViewDeliveryLogs.Name = "GridViewDeliveryLogs"
         '
         'GridColumnNo
         '
@@ -96,7 +96,7 @@ Partial Class DeliveryLogsViews
         'GridColumnDeliveryDate
         '
         Me.GridColumnDeliveryDate.Caption = "Delivery Date"
-        Me.GridColumnDeliveryDate.FieldName = "Delivery Date"
+        Me.GridColumnDeliveryDate.FieldName = "DeliveryDate"
         Me.GridColumnDeliveryDate.Name = "GridColumnDeliveryDate"
         Me.GridColumnDeliveryDate.Visible = True
         Me.GridColumnDeliveryDate.VisibleIndex = 5
@@ -130,18 +130,18 @@ Partial Class DeliveryLogsViews
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1010, 469)
-        Me.Controls.Add(Me.GridControl1)
+        Me.Controls.Add(Me.GridControlDeliveryLogs)
         Me.Name = "DeliveryLogsViews"
         Me.Text = "Delivery Logs"
-        CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GridControlDeliveryLogs, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GridViewDeliveryLogs, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BehaviorManager1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents GridControl1 As DevExpress.XtraGrid.GridControl
-    Friend WithEvents GridView1 As DevExpress.XtraGrid.Views.Grid.GridView
+    Friend WithEvents GridControlDeliveryLogs As DevExpress.XtraGrid.GridControl
+    Friend WithEvents GridViewDeliveryLogs As DevExpress.XtraGrid.Views.Grid.GridView
     Friend WithEvents GridColumnNo As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumnCustomer As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumnCustomerPoNumber As DevExpress.XtraGrid.Columns.GridColumn

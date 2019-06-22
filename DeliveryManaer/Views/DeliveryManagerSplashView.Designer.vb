@@ -44,6 +44,7 @@ Partial Class DeliveryManagerSplashView
         Me.peImage.Properties.Appearance.Options.UseBackColor = True
         Me.peImage.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
         Me.peImage.Properties.ShowMenu = False
+        Me.peImage.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze
         Me.peImage.Size = New System.Drawing.Size(426, 180)
         Me.peImage.TabIndex = 14
         '
