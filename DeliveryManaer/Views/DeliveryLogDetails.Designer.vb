@@ -230,7 +230,6 @@ Partial Class DeliveryLogDetailViewEditNew
         Me.DropDownButtonAttachments.Name = "DropDownButtonAttachments"
         Me.DropDownButtonAttachments.Size = New System.Drawing.Size(135, 23)
         Me.DropDownButtonAttachments.TabIndex = 23
-        Me.DropDownButtonAttachments.Text = "Attachments"
         '
         'PopupMenuAttachments
         '

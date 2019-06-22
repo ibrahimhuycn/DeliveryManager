@@ -6,7 +6,7 @@
                  .Godown = "Godown 1",
                  .Customer = "Indira Gandhi Memorial Hospital",
                  .DeliveredBy = "Ibraim Hussain",
-                 .DeliveredDate = Date.Today,
+                 .DeliveryDate = Date.Today,
                  .ReceivedBy = "Ahmed Hisaan Saeed",
                  .ReceivedDate = Date.Today,
                  .Comment = "Delivery Completed."})

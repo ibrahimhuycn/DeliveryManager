@@ -13,7 +13,9 @@ Partial Public Class DeliveryManagerView
     End Sub
 
     Private Sub BarButtonDeliveryLog_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonDeliveryLog.ItemClick
+        Dim logs As New DeliveryLogsViewModel
         Dim DeliveryLog As New DeliveryLogsViews With {.MdiParent = Me}
+        DeliveryLog.GridControlDeliveryLogs.DataSource = DeliveryLogsViewModel.GetLogs(logs)
         DeliveryLog.Show()
     End Sub
 

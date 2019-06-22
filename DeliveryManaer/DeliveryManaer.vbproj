@@ -79,6 +79,7 @@
     <Compile Include="Models\CustomerModel.vb" />
     <Compile Include="Models\DeliveryLogsModel.vb" />
     <Compile Include="ViewModels\CustomerViewModel.vb" />
+    <Compile Include="ViewModels\DeliveryLogDetailsViewModel.vb" />
     <Compile Include="ViewModels\DeliveryLogsViewModel.vb" />
     <Compile Include="Views\AuthenticationView.Designer.vb">
       <DependentUpon>AuthenticationView.vb</DependentUpon>
