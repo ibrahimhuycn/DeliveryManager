@@ -35,4 +35,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="LoggedTime" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="add1d838-edab-45c1-95e5-3406dcd5c1a1" ChangeDateTime="06/24/2019 12:30:56">
+    <Property Name="ElementName" Value="[dbo].[DeliveryLog_Attachment].[AttachmentType]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DeliveryLog_Attachment]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AttachmentTypeId" />
+  </Operation>
 </Operations>
