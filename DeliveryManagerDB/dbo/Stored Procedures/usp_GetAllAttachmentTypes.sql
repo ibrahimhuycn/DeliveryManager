@@ -1,6 +1,7 @@
 ﻿CREATE PROCEDURE [dbo].[usp_GetAllAttachmentTypes]
-	@param1 int = 0,
-	@param2 int
+
 AS
-	SELECT @param1, @param2
-RETURN 0
+BEGIN
+	SELECT * 
+	FROM dbo.AttachmentType
+END
