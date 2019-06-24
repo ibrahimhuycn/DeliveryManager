@@ -14,4 +14,25 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="ReceivedBy" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="b5b0d5d1-4837-4f24-bc8b-8cd19db6eaf4" ChangeDateTime="06/24/2019 11:53:32">
+    <Property Name="ElementName" Value="[dbo].[DeliveryTraceLog].[DeliveryTraceType]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DeliveryTraceLog]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TraceTypeId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e8a5889a-512a-4b24-94a7-7af32984fbbe" ChangeDateTime="06/24/2019 12:02:28">
+    <Property Name="ElementName" Value="[dbo].[DeliveryTraceLog].[TraceDateTime]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DeliveryTraceLog]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DateTime" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8a1f6eab-cd7e-461f-9212-ddb0f8bb8c91" ChangeDateTime="06/24/2019 12:02:45">
+    <Property Name="ElementName" Value="[dbo].[DeliveryTraceLog].[DateTime]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DeliveryTraceLog]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LoggedTime" />
+  </Operation>
 </Operations>
