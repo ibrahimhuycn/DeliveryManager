@@ -42,4 +42,18 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="AttachmentTypeId" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="22cd536f-05f4-487a-8539-85e8229008f4" ChangeDateTime="06/24/2019 12:31:54">
+    <Property Name="ElementName" Value="[dbo].[DeliveryTraceLog].[DeliveryLogNUmber]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DeliveryTraceLog]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DeliveryLogNumber" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="393de934-a95a-4e93-93fe-b712e6dd062b" ChangeDateTime="06/24/2019 12:32:59">
+    <Property Name="ElementName" Value="[dbo].[DeliveryTraceLog].[DeliveryLogNumber]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DeliveryTraceLog]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DeliveryNumber" />
+  </Operation>
 </Operations>
