@@ -71,6 +71,12 @@
     <Build Include="dbo\Tables\AttachmentType.sql" />
     <Build Include="dbo\Tables\DeliveryTraceLog.sql" />
     <Build Include="dbo\Tables\TraceType.sql" />
+    <Build Include="dbo\Stored Procedures\usp_GetAllDeliveryLogs.sql" />
+    <Build Include="dbo\Stored Procedures\usp_GetAllCustomers.sql" />
+    <Build Include="dbo\Stored Procedures\usp_GetAllEmployees.sql" />
+    <Build Include="dbo\Stored Procedures\usp_GetAllGodowns.sql" />
+    <Build Include="dbo\Stored Procedures\usp_GetAllAttachmentTypes.sql" />
+    <Build Include="dbo\Stored Procedures\usp_GetAllTraceTypes.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DeliveryManagerDB.refactorlog" />
