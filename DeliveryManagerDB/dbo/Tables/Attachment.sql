@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[Attachment]
+(
+	[Id] INT NOT NULL PRIMARY KEY, 
+    [Base64] VARCHAR(MAX) NOT NULL
+)
